@@ -13,7 +13,7 @@ const HeaderBox = styled.div`
   width: 100%;
   height: 72px;
   padding: 24px 50px;
-  // background-color: #ccc;
+  z-index: 1000;
 `;
 
 const MainLogo = styled.h1`
