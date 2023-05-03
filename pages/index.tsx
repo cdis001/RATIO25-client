@@ -3,7 +3,7 @@ import Image from "next/image";
 import styled from "styled-components";
 
 import Header from "../components/header";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 import mainBannerImg from "public/imgs/main-banner.png";
 import bestWomenUnderwearImg from "public/imgs/best-w-underwear.png";
@@ -223,7 +223,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <MainBanner style={{ aspectRatio: 16 / 9 }}>
+        <MainBanner styles={{ aspectRatio: 16 / 9 }}>
           <Image src={mainBannerImg} alt={"main banner"} />
         </MainBanner>
         <BestUnderwear>
@@ -369,7 +369,7 @@ export default function Home() {
             </MainMainProductList>
             <SlideListBtns>
               <li>
-                <button className={"active"} />
+                <button class={"active"} />
               </li>
               <li>
                 <button />
@@ -454,7 +454,7 @@ export default function Home() {
             </MainMainProductList>
             <SlideListBtns>
               <li>
-                <button className={"active"} />
+                <button class={"active"} />
               </li>
               <li>
                 <button />
