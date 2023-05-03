@@ -6,6 +6,11 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  assetPrefix: "./",
 };
 
 module.exports = nextConfig;
