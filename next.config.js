@@ -6,11 +6,12 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  basePath: "/RATIO25-client",
   images: {
     loader: "akamai",
     path: "",
+    unoptimized: true,
   },
-  assetPrefix: "./",
 };
 
 module.exports = nextConfig;

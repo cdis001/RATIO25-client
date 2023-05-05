@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 import mainBannerImg from "public/imgs/main-banner.png";
+
 import bestWomenUnderwearImg from "public/imgs/best-w-underwear.png";
 import wUnderwearImg01 from "public/imgs/w-underwear-01.png";
 import bestMenUnderwearImg from "public/imgs/best-m-underwear.png";
@@ -32,6 +33,7 @@ const MainLogo = styled.h1`
 
 const MainBanner = styled.div`
   width: 100%;
+  aspect-ratio: 16 / 9;
   & > img {
     width: 100%;
     height: 100%;
@@ -223,29 +225,53 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <MainBanner style={{ aspectRatio: 16 / 9 }}>
-          <Image src={mainBannerImg} alt={"main banner"} />
+        <MainBanner>
+          <Image src={mainBannerImg} alt={"main banner"} priority={true} />
         </MainBanner>
         <BestUnderwear>
           <div>
             <UnderwearList>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={wUnderwearImg01} alt={"women underwear img 01"} />
+                <Image
+                  src={wUnderwearImg01}
+                  alt={"women underwear img 01"}
+                  priority={false}
+                />
               </li>
             </UnderwearList>
           </div>
@@ -253,32 +279,61 @@ export default function Home() {
             <Image
               src={bestWomenUnderwearImg}
               alt={"best women underwear img"}
+              priority={true}
             />
           </div>
         </BestUnderwear>
         <BestUnderwear>
           <div>
-            <Image src={bestMenUnderwearImg} alt={"best men underwear img"} />
+            <Image
+              src={bestMenUnderwearImg}
+              alt={"best men underwear img"}
+              priority={true}
+            />
           </div>
           <div>
             <UnderwearList>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
               <li>
-                <Image src={mUnderwearImg01} alt={"men underwear img 01"} />
+                <Image
+                  src={mUnderwearImg01}
+                  alt={"men underwear img 01"}
+                  priority={false}
+                />
               </li>
             </UnderwearList>
           </div>
@@ -300,12 +355,14 @@ export default function Home() {
               <Image
                 src={wMainProductLeftImg}
                 alt={"women main product left img"}
+                priority={true}
               />
             </MainProductImg>
             <MainProduct2XImg>
               <Image
                 src={wMainProductRightImg}
                 alt={"women main product right img"}
+                priority={true}
               />
             </MainProduct2XImg>
           </MainProductImgBox>
@@ -317,7 +374,7 @@ export default function Home() {
                   <span>SEXY FIT</span>
                   <br />
                   <span>SPORTY FIT</span>
-                  <Image src={RightAngleBracket} alt={">"} />
+                  <Image src={RightAngleBracket} alt={">"} priority={true} />
                 </p>
               </div>
               <div>
@@ -344,6 +401,7 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
@@ -351,6 +409,7 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
@@ -358,12 +417,14 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
             </MainMainProductList>
@@ -383,12 +444,14 @@ export default function Home() {
               <Image
                 src={mMainProductLeftImg}
                 alt={"men main product left img"}
+                priority={true}
               />
             </MainProduct2XImg>
             <MainProductImg>
               <Image
                 src={mMainProductRightImg}
                 alt={"men main product right img"}
+                priority={true}
               />
             </MainProductImg>
           </MainProductImgBox>
@@ -400,10 +463,10 @@ export default function Home() {
                   <span>SPORTY FIT</span>
                   <br />
                   <span>SEXY FIT</span>
-                  <Image src={RightAngleBracket} alt={">"} />
+                  <Image src={RightAngleBracket} alt={">"} priority={true} />
                   <br />
                   <span>BIKINI FIT</span>
-                  <Image src={RightAngleBracket} alt={">"} />
+                  <Image src={RightAngleBracket} alt={">"} priority={true} />
                 </p>
               </div>
               <div>
@@ -429,6 +492,7 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
@@ -436,6 +500,7 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
@@ -443,12 +508,14 @@ export default function Home() {
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
               <li>
                 <Image
                   src={wMainProductItemImg01}
                   alt={"wamen main product item image 1"}
+                  priority={false}
                 />
               </li>
             </MainMainProductList>
