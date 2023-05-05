@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Router from "next/router";
 import styled from "styled-components";
 
 import bagIcon from "public/imgs/bag-icon.svg";
@@ -48,7 +49,9 @@ const Header = () => {
     <HeaderBox>
       <HeaderMenuUl>
         <li>
-          <HeaderButton>Shop</HeaderButton>
+          <HeaderButton onClick={() => Router.push("/product")}>
+            Shop
+          </HeaderButton>
         </li>
         <li>
           <HeaderButton>About</HeaderButton>
@@ -57,7 +60,9 @@ const Header = () => {
           <HeaderButton>Contacts</HeaderButton>
         </li>
       </HeaderMenuUl>
-      <MainLogo>RATIO25</MainLogo>
+      <button onClick={() => Router.push("/")}>
+        <MainLogo>RATIO25</MainLogo>
+      </button>
       <HeaderIconUl>
         <li>
           <HeaderButton>
