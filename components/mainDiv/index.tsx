@@ -4,6 +4,7 @@ import styled from "styled-components";
 const MainDivStyle = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 interface MainDivProps {
@@ -11,7 +12,7 @@ interface MainDivProps {
 }
 
 const MainDiv = ({ children }: MainDivProps) => {
-  return <MainDivStyle>{...children}</MainDivStyle>;
+  return <MainDivStyle>{children}</MainDivStyle>;
 };
 
 export default MainDiv;

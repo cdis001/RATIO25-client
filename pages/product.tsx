@@ -54,6 +54,10 @@ const ProductsListUl = styled.ul`
     padding: 0 10px;
     border-top: 1px solid #9c9e8a;
   }
+  & > li > img {
+    width: 100%;
+    object-fit: cover;
+  }
   & > li:last-child {
     grid-column: 3 / span 2;
     grid-row: 2 / span 2;
